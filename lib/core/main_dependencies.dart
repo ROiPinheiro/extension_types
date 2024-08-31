@@ -1,5 +1,5 @@
-import 'package:extension_types/app/data/api/login_api.dart';
-import 'package:extension_types/app/data/repository/login_repository.dart';
+import 'package:extension_types/app/data/login/login_api.dart';
+import 'package:extension_types/app/data/login/login_repository.dart';
 import 'package:extension_types/app/domain/use_case/login.dart';
 import 'package:extension_types/app/presentation/page/home/home_controller.dart';
 import 'package:extension_types/core/adapters/graphql_adapter.dart';

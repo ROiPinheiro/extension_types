@@ -1,5 +1,5 @@
-import 'package:extension_types/app/data/api/login_api.dart';
-import 'package:extension_types/app/data/model/login_request.dart';
+import 'package:extension_types/app/data/login/login_api.dart';
+import 'package:extension_types/app/data/login/login_request.dart';
 import 'package:extension_types/app/domain/model/user_model.dart';
 import 'package:extension_types/app/domain/types/email.dart';
 
