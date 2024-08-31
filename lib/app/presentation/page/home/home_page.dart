@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:extension_types/app/presentation/pages/home/home_controller.dart';
-import 'package:extension_types/app/presentation/pages/home/widgets/home_form.dart';
-
+import 'package:extension_types/app/presentation/page/home/home_controller.dart';
+import 'package:extension_types/app/presentation/page/home/widgets/home_form.dart';
 import 'package:extension_types/core/injector.dart';
+import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   final HomeController homeController = injector.get<HomeController>();

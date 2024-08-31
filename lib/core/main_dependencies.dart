@@ -1,6 +1,13 @@
-import 'package:extension_types/app/presentation/pages/home/home_controller.dart';
+import 'package:extension_types/app/data/api/login_api.dart';
+import 'package:extension_types/app/data/repository/login_repository.dart';
+import 'package:extension_types/app/domain/use_case/login.dart';
+import 'package:extension_types/app/presentation/page/home/home_controller.dart';
+import 'package:extension_types/core/adapters/graphql_adapter.dart';
 import 'package:extension_types/core/injector.dart';
 
 void injectMainDependencies() {
-  injector.addLazySingleton(HomeController.new);
+  injector.addLazySingleton<GraphqlAdapter>(GraphqlAdapter.new);
+  injector.addLazySingleton<LoginApi>(LoginRepositoryImpl.new);
+  injector.addLazySingleton<LoginUseCase>(Login.new);
+  injector.addLazySingleton<HomeController>(HomeController.new);
 }

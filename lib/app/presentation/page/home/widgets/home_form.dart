@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:extension_types/app/presentation/pages/home/home_controller.dart';
+import 'package:extension_types/app/presentation/page/home/home_controller.dart';
 import 'package:extension_types/core/injector.dart';
+import 'package:flutter/material.dart';
 
 class HomeForm extends StatelessWidget {
   HomeForm({super.key});
@@ -19,7 +19,7 @@ class HomeForm extends StatelessWidget {
               decoration: InputDecoration(
                 border: const OutlineInputBorder(),
                 label: const Text('Name'),
-                errorText: homeController.user.name.errorMessage,
+                errorText: homeController.user.name?.errorMessage,
               ),
             );
           },
@@ -35,7 +35,7 @@ class HomeForm extends StatelessWidget {
               decoration: InputDecoration(
                 border: const OutlineInputBorder(),
                 label: const Text('E-mail'),
-                errorText: homeController.user.email.errorMessage,
+                errorText: homeController.user.email?.errorMessage,
               ),
             );
           },
